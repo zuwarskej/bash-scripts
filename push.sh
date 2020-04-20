@@ -14,7 +14,7 @@ git status
 
 # Make commit
 echo 'Enter the commit message:'
-read commit
+read -r commit
 git commit -m "$commit"
 
 # Check remote repository
@@ -25,6 +25,6 @@ git remote -v
 read -n1 -p -r "Do you want to push to master?" push
 
 case $push in
-y|Y git push origin master ;;
-n|N echo "Exiting" exit ;;
+y|Y) git push origin master ;;
+n|N) echo "Exiting" exit ;;
 esac
