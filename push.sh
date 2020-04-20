@@ -1,7 +1,7 @@
 #!/bin/bash
 # ---------------------------------------
 # Description: push to remote repository
-# Written by : zuwawrskej
+# Written by : zuwarskej
 # ---------------------------------------
 
 # Add all added/modified files
@@ -19,4 +19,4 @@ git commit -m "$commit"
 
 # Push to remote repository
 echo "Push to master"
-git push -u origin master
+git push origin master
