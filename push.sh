@@ -18,5 +18,6 @@ read -r commit
 git commit -m "$commit"
 
 # Push to remote repository
-echo "Push to master"
-git push origin master
+echo "Push to remote repository"
+read -r branch
+git push origin "$branch"
