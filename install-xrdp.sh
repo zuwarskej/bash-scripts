@@ -21,7 +21,7 @@ fi
 
 . /etc/os-release
 SUPPORTED=false
-for i in 16.04 18.04 20.04;  do
+for i in 18.04 20.04;  do
     [ "$VERSION_ID" == "$i" ] && SUPPORTED=true
 done
 [ ! "$SUPPORTED" == true ] && echo "System: $ID $VERSION_ID not supported!" && exit 1;
