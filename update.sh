@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# ------------------------------------------------------
-# Descryption: update and install packages Debian/Ubuntu
+# ------------------------------------------#
+# Descryption: update packages Debian/Ubuntu
 # Written by : zuwarskej
-# ------------------------------------------------------
+# ------------------------------------------#
 
 # Check the root rights
 root() {
@@ -15,6 +15,8 @@ root() {
 }
 root
 
-if apt update && apt upgrade -y && sudo apt autoremove -y && sudo apt autoclean; then
-	 apt install -y curl git wget;
+# Update and upgade packages
+if apt update && apt upgrade -yqq && sudo apt autoremove -y && sudo apt autoclean; then
+	 apt full-upgrade -yqq;
 fi
+
