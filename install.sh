@@ -22,6 +22,6 @@ fi
 
 # Install packages
 for packages in curl git wget apt-transport-https openssh-server openssh-client \
-build-essential bash-completion htop lnav ncdu mc; do
+build-essential bash-completion htop lnav ncdu mc tree; do
 	apt-get install -y --allow-unauthenticated $packages
 done

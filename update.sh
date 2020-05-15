@@ -15,8 +15,7 @@ root() {
 }
 root
 
-# Update and upgade packages
-if apt update && apt upgrade -yqq && sudo apt autoremove -y && sudo apt autoclean; then
-	 apt full-upgrade -yqq;
+# Update and upgrade packages
+if apt update && apt upgrade -yqq; then
+	apt autoremove -y && apt autoclean;
 fi
-
