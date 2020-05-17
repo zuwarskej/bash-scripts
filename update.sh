@@ -9,7 +9,7 @@
 root() {
 	local id=$(id -u)
 	if [ $id -ne 0 ]; then
-		echo "You must be root user to run this script"
+		echo "You must be root or sudo user to run this script"
 	exit 1
 	fi
 }
