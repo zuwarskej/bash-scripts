@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# ----------------------------------------------------------
+# ----------------------------------------------------------#
 # Script Name: os-info.sh
 # Description: show some info about PC and install software
 # Written by : zuwarskej
-# ----------------------------------------------------------
+# ----------------------------------------------------------#
 
 #Check the root rights
 chk_root() {
@@ -227,9 +227,8 @@ case $opcao in
 
 		function installed () {
 
-	LIST_SOFT="curl git wget acl samba smbclient sssd sssd-tools dkms apt-transport-https krb5-user adcli"
-	LIST_SOFT_ELSE="libpam-pwquality libnss-sss libpam-sss libsss-sudo openssh-server openssh-client build-essential bash-completion"
-	LIST_UTILS="htop lnav tmux nmon ncdu mc stress-ng net-tools lm-sensors swapspace"
+	LIST_SOFT="curl git wget dkms apt-transport-https openssh-server openssh-client build-essential bash-completion swapspace"
+	LIST_UTILS="htop lnav tmux ncdu mc"
 	TIME=3
 
 	# Use aptittude for programs loop
@@ -241,7 +240,7 @@ case $opcao in
 
 	sleep $TIME
 
-	# Update and Upgrade packages
+	# Update and upgrade packages
 		if apt update && apt upgrade -y
 			then apt autoremove -y && apt autoclean
 		fi
@@ -253,7 +252,7 @@ case $opcao in
 	sleep $TIME
 
 	# Use aptitude for programs loop
-	  apt install aptitude $LIST_SOFT $LIST_SOFT_ELSE $LIST_UTILS
+	  apt install aptitude $LIST_SOFT $LIST_UTILS
 
 	echo "-----------------------------------------------------------------"
 	echo "	Update and install soft complete"

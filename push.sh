@@ -1,8 +1,8 @@
 #!/bin/bash
-# ---------------------------------------
+# ---------------------------------------#
 # Description: push to remote repository
 # Written by : zuwarskej
-# ---------------------------------------
+# ---------------------------------------#
 
 # Add all added/modified files
 echo "Add all added/modified files"
