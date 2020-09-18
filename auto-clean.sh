@@ -1,8 +1,6 @@
 #!/bin/bash
-# ---------------------------------------------------------#
-# Descryption: clean and remove old packages Debian/Ubuntu
-# Written by : zuwarskej
-# ---------------------------------------------------------#
+
+# Descryption: clean and remove temporary packages Debian/Ubuntu
 
 # Check the root rights
 root() {

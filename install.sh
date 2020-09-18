@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# -----------------------------------------------------------#
 # Descryption: update and install some packages Debian/Ubuntu
-# Written by : zuwarskej
-# -----------------------------------------------------------#
 
 # Check the root rights
 root() {

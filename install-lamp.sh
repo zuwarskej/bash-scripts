@@ -1,9 +1,7 @@
 
 #!/bin/bash
-# -----------------------------------------------------#
+
 # Description: install and configure LAMP Debian/Ubuntu
-# Written by : v.prudnichenko
-# -----------------------------------------------------#
 
 FILE=/var/www/html/test-php.php
 

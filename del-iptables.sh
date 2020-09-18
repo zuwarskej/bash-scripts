@@ -1,11 +1,8 @@
 #!/bin/sh
 
-# ------------------------------------------------
-# Description: script for stopping iptables rules
-# Written by : zuwarskej
-# ------------------------------------------------
+# Description: stopping iptables rules
 
-echo "Stopping firewall"
+echo "Cleaning iptables"
 iptables -F
 iptables -X
 iptables -t nat -F

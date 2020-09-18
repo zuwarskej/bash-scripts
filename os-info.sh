@@ -1,10 +1,7 @@
 #!/bin/bash
 
-# ----------------------------------------------------------#
 # Script Name: os-info.sh
 # Description: show some info about PC and install software
-# Written by : zuwarskej
-# ----------------------------------------------------------#
 
 #Check the root rights
 chk_root() {

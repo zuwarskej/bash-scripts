@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# ------------------------------------------#
 # Descryption: update packages Debian/Ubuntu
-# Written by : zuwarskej
-# ------------------------------------------#
 
 DATE=$(date +"%m-%d-%Y")
 FILE=$HOME/log_update.txt
@@ -20,10 +17,10 @@ root
 
 # Update and upgrade packages
 if apt update && apt upgrade -yqq; then
-	apt autoremove -y && apt autoclean;
+	apt autoremove -yqq && apt autoclean;
 fi
 
-# Write date for last update in file
+# Write date in file
 if [ -f "$FILE" ]; then
    echo "Last system update: $DATE" >> $FILE
 else

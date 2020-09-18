@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# ---------------------------------------------------------#
 # Descryption: set up and configure swapspace Debian/Ubuntu
-# Written by : zuwarskej
-# ---------------------------------------------------------#
 
 # Check the root rights
 root() {

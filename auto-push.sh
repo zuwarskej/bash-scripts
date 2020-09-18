@@ -1,8 +1,6 @@
 #!/bin/bash
-# -------------------------------------------------------------------#
+
 # Description: push to remotes repositories (github gitlab bitbucket)
-# Written by : zuwarskej
-# -------------------------------------------------------------------#
 
 # Check the root rights
 root() {

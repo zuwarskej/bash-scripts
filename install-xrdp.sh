@@ -1,8 +1,6 @@
 #!/bin/bash
-# ---------------------------------------#
-# Description: install and configure xrdp
-# Written by : v.prudnichenko
-# ---------------------------------------#
+
+# Description: install and configure xrdp Ubuntu
 
 # Check root Rights
 if [ "$UID" != "0" ]; then
@@ -15,7 +13,7 @@ if [ "$UID" != "0" ]; then
     fi
 fi
 
-# Check supported System
+# Check supported system
 [ ! -f /etc/os-release ] && \
     echo "Can\'t find /etc/os-release - Can\'t identify system!" && exit 1;
 
