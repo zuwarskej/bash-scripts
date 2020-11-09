@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Descryption: update packages Debian/Ubuntu
+# Descryption: update packages in Debian/Ubuntu
 
 DATE=$(date +"%m-%d-%Y")
 FILE=$HOME/log_update.txt

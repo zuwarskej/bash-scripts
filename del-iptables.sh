@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: stopping iptables rules
+# Description: stop iptables rules
 
 echo "Cleaning iptables"
 iptables -F

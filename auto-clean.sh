@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Descryption: clean and remove temporary packages Debian/Ubuntu
+# Descryption: clean and remove temporary packages in Debian/Ubuntu
 
 # Check the root rights
 root() {

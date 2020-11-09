@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Descryption: update and install some packages Debian/Ubuntu
+# Descryption: install some packages in Debian/Ubuntu
 
 # Check the root rights
 root() {

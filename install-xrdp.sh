@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Description: install and configure xrdp Ubuntu
+# Description: install and configure xrdp in Ubuntu
 
 # Check root Rights
 if [ "$UID" != "0" ]; then

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script Name: os-info.sh
-# Description: show some info about PC and install software
+# Description: show some info about PC and install software in Debian/Ubuntu
 
 #Check the root rights
 chk_root() {
