@@ -7,7 +7,7 @@ if [ "$UID" != "0" ]; then
     [ ! -f /usr/bin/sudo ] && echo "Install sudo!" && exit 1;
     if sudo echo &> /dev/null; then
         echo "Self rerun with sudo..."
-        exec sudo bash $0
+        exec sudo bash "$0"
     else
         echo "Script must be runned as root or by user with sudo permissions!" && exit 1;
     fi
@@ -29,7 +29,7 @@ apt update && apt upgrade -yqq
 
 # Install xrdp
 if apt install -y --reinstall xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils; then
-	apt install -y --reinstall xrdp;
+    apt install -y --reinstall xrdp;
 fi
 
 # Add user to group ssl-cert
@@ -39,27 +39,25 @@ usermod -a -G ssl-cert "$group_user"
 
 # Add options to xrdp.ini
 if grep -R "exec startxfce4" /etc/xrdp/xrdp.ini > /dev/null; then
-	echo "String exist"
+    echo "String exist"
 else
-	echo "exec startxfce4" >> /etc/xrdp/xrdp.ini
+    echo "exec startxfce4" >> /etc/xrdp/xrdp.ini
 fi
 
 # Running/restart xrdp service
 systemctl status xrdp | grep 'active (running)' > /dev/null 2>&1
 
-if [ $? != 0 ]
-	then
-		systemctl restart xrdp > /dev/null
+if [ $? != 0 ]; then
+    systemctl restart xrdp > /dev/null
 fi
 
 # Add exception for port 3389
 ufw allow 3389
 
 # Reboot system
-for (( i=3; i >= 0; i-- ))
-	do
-		echo "System reboot after $i seconds"
-	sleep 1s
+for (( i=3; i >= 0; i-- )); do
+    echo "System reboot after $i seconds"
+    sleep 1s
 done
 
 reboot
