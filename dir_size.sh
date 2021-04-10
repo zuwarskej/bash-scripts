@@ -1,5 +1,5 @@
 #!/bin/bash
 
 echo "Enter a directory:"
-read x
+read -r x
 du -sh --time "$x"

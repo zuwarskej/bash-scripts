@@ -2,15 +2,15 @@
 
 # Description: push to remote repository
 
-# Add all added/modified files
-echo "Add all added/modified files"
+# Index files to commit 
+echo "Index files to commit"
 git add .
 
-# Check added files to commit
+# Check status
 echo "Current status is:"
 git status
 
-# Make commit
+# Commit changes 
 echo "Enter the commit message:"
 read -r commit
 git commit -m "$commit"
@@ -18,4 +18,4 @@ git commit -m "$commit"
 # Push to remote repository
 echo "Push to remote repository"
 read -r branch
-git push origin "$branch"
+git push github "$branch"

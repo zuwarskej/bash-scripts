@@ -2,18 +2,14 @@
 
 # Descryption: update packages in Debian/Ubuntu
 
-DATE=$(date +"%m-%d-%Y")
-FILE=$HOME/log_update.txt
+DATE="$(date +"%m-%d-%Y")"
+FILE="$HOME/log_update.txt"
 
 # Check the root rights
-root() {
-    local ID=$(id -u)
-        if [ "$ID" -ne 0 ]; then
-            echo "You must be root or sudo user to run this script"
-            exit 1
-        fi
-}
-root
+if [ "$(id -un)" != "root" ]; then
+  echo "ERROR: You must be root to run this script." >&2
+  exit 1
+fi
 
 # Update and upgrade packages
 if apt update && apt upgrade -yqq; then
