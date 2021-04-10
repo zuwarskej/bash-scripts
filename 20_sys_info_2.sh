@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Descryption:              Customize system info in Debian 10
-# Path to file:             /etc/update-motd.d/20-system_info_ssh
+# Path to file:             /etc/update-motd.d/20-sysinfo
 # Delete default file:      rm /etc/motd
-# Make executable:          chmod +x /etc/update-motd.d/20-system_info_ssh
+# Make executable:          chmod +x /etc/update-motd.d/20-sysinfo
 # Stop executable default:  chmod -x /etc/update-motd.d/10-uname
 # Add PrintLastLog:         echo PrintLastLog no >> /etc/ssh/sshd_config
 

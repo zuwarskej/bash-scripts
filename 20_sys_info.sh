@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Descryption:              Customize system info in Debian 10
 # Path to file:             /etc/update-motd.d/20-sysinfo
