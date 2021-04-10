@@ -1,6 +1,6 @@
 ## List of scripts:
-1. [20_sys_info](https://github.com/zuwarskej/bash-scripts/blob/main/20-sysinfo) - Customize system info in Debian 10
-2. [20_sys_info_2](https://github.com/zuwarskej/bash-scripts/blob/main/20-system_info_ssh.sh) - Customize system info in Debian 10 (another version)
+1. [20_sys_info](https://github.com/zuwarskej/bash-scripts/blob/main/20_sys_info.sh) - Customize system info in Debian 10
+2. [20_sys_info_2](https://github.com/zuwarskej/bash-scripts/blob/main/20_sys_info_2.sh) - Customize system info in Debian 10 (another version)
 3. [auto_clean](https://github.com/zuwarskej/bash-scripts/blob/main/auto_clean.sh) - Remove packages and temporary files in Debian/Ubuntu
 4. [configure_swapspace](https://github.com/zuwarskej/bash-scripts/blob/main/configure_swapspace.sh) - Set up and configure swapspace in Debian/Ubuntu
 5. [del_iptables_rules](https://github.com/zuwarskej/bash-scripts/blob/main/del_iptables_rules.sh) - Stop iptables rules
