@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#Set up git config global
+# Set up git config global
 echo "Enter name for git config"
-read name
+read -r name
 git config --global user.name "$name"
 
 echo "Enter email for git config"
-read email
+read -r email
 git config --global user.email "$email"
 
-#Check username and email settings
+# Check username and email settings
 git config --list | grep -i user
