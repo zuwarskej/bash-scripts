@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Descryption: clean and remove temporary packages in Debian/Ubuntu
+# Descryption: remove packages and temporary files in Debian/Ubuntu
 
 # Check the root rights
 if [ "$(id -un)" != "root" ]; then
